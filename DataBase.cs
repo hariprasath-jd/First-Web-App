@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using System.Windows.Forms;
+using System.Configuration.Internal;
 
 namespace First_Web_App
 {
@@ -30,7 +31,7 @@ namespace First_Web_App
         {
             int x = 0;
             command = new SqlCommand("LoginDetails", connect);
-            command.CommandType = System.Data.CommandType.StoredProcedure;
+            command.CommandType = CommandType.StoredProcedure;
             command.Parameters.AddWithValue("user", name);
             command.Parameters.AddWithValue("passwd", passwd);
             reader = command.ExecuteReader();
@@ -117,5 +118,6 @@ namespace First_Web_App
             return days;
         }
 
+        int a = 1;
     }
 }
