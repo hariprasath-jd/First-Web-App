@@ -14,7 +14,7 @@ namespace First_Web_App
             if (Session["username"] != null)
             {
                 string name = Session["username"].ToString();
-                navName.Text = tranName.Text = name;
+                /*navName.Text =*/ tranName.Text = name;
             }
             else
             {

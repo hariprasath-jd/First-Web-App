@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Leave Info.aspx.cs" Inherits="First_Web_App.Leave_Info" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site1.Master" CodeBehind="Leave Info.aspx.cs" Inherits="First_Web_App.Leave_Info" %>
 
-<!DOCTYPE html>
+<%--<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -14,8 +14,8 @@
     <link rel="stylesheet" type="text/css" href="css/leave_info.css" />
 </head>
 <body>
-    <form id="form1" runat="server">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center" data-bs-theme="dark">
+    <form id="form1" runat="server">--%>
+<%--<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center" data-bs-theme="dark">
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#">Suzume</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -43,7 +43,9 @@
 
                 </div>
             </div>
-        </nav>
+        </nav>--%>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <main>
         <div>
             <div id="centerdiv">
                 <p id="bdHeader">
@@ -53,21 +55,29 @@
             </div>
 
             <style>
-                #LeaveInfo td, th {
+                #LeaveInfo td {
+                    padding: 5px;
+                    border: 2px solid black;
+                }
+
+                #LeaveInfo th {
                     padding: 5px;
                     border: 2px solid black;
                 }
             </style>
+
             <div>
                 <asp:GridView
                     ID="LeaveInfo"
                     runat="server"
                     AutoGenerateColumns="false"
-                    Style="text-align: center; position: relative; top: 80px; left: 25%;"
+                    Style="text-align: center; position: relative; top: 80px; left: 25%;padding: 5px;border: 2px solid black;"
                     BorderStyle="Solid"
-                    AlternatingRowStyle-BorderStyle="Solid">
-                    <RowStyle />
-                    <Columns>
+                    AlternatingRowStyle-BorderStyle="Solid"
+                    >
+                    <RowStyle BorderWidth="3px" BorderStyle="Solid" BorderColor="Black"  />
+                    <Columns >
+
                         <asp:TemplateField HeaderText="Leave ID">
                             <ItemTemplate>
                                 <%#Eval("Leave_Id") %>
@@ -108,10 +118,12 @@
                 </asp:GridView>
             </div>
         </div>
-    </form>
+    </main>
+</asp:Content>
+<%--    </form>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
     </asp:PlaceHolder>
 </body>
-</html>
+</html>--%>
