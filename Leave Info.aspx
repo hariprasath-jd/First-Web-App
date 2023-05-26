@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site1.Master" CodeBehind="Leave Info.aspx.cs" Inherits="First_Web_App.Leave_Info" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UserMaster.Master" CodeBehind="Leave Info.aspx.cs" Inherits="First_Web_App.Leave_Info" %>
 
 <%--<!DOCTYPE html>
 

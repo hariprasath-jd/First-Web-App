@@ -46,7 +46,10 @@ namespace First_Web_App
                             ex.Value = sam[1].ToString();
                             Response.Cookies.Add(ex);
                         }
-                        Response.Redirect("Home_Page");
+                        if ((string)info[3] == "E")
+                            Response.Redirect("Home_Page");
+                        else
+                            Response.Redirect("AdminDash");
                     }
                     else
                     {
@@ -60,14 +63,14 @@ namespace First_Web_App
                 {
                     UserMsg.Visible = true;
                     UserMsg.ForeColor = Color.Red;
-                    UserMsg.Text = "User Din't Match";
+                    UserMsg.Text = "User Didn't Match";
                 }
             }
             else
             {
                 UserMsg.Visible = true;
                 UserMsg.ForeColor = Color.Red;
-                UserMsg.Text = "User Din't Match";
+                UserMsg.Text = "User Didn't Match";
             }
             
         }

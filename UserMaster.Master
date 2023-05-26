@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="First_Web_App.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.Master.cs" Inherits="First_Web_App.Site1" %>
 
 <!DOCTYPE html>
 
@@ -13,7 +13,7 @@
     </asp:PlaceHolder>
     <link rel="stylesheet" type="text/css" href="css/leave_info.css" />
     <webopt:BundleReference runat="server" Path="~/Content/css" />
-    
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -37,14 +37,17 @@
                                 <a class="nav-link" runat="server" href="Salary">Salary Info</a>
                             </li>
                         </ul>
-                        <p style="color: white; margin-right: 10px; position: relative; top: 8px;">Welcome
-                            <asp:Label ID="navName" ForeColor="white" runat="server" Text="name"></asp:Label></p>
+                        <p style="color: white; margin-right: 10px; position: relative; top: 8px;">
+                            Welcome
+                            <asp:Label ID="navName" ForeColor="white" runat="server" Text="name"></asp:Label>
+                        </p>
                         <asp:Button class="btn btn-outline-danger" Style="margin-right: 15px;" runat="server" Text="LogOut" ID="BtnLogOut" OnClick="BtnLogOut_Click" />
                         <img src="image/cat.png" alt="Bootstrap" width="30" height="30" />
 
                     </div>
                 </div>
             </nav>
+            
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

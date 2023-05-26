@@ -11,7 +11,7 @@ namespace First_Web_App
 {
 
 
-    public partial class Salary
+    public partial class AdminMaster
     {
 
         /// <summary>
@@ -21,60 +21,51 @@ namespace First_Web_App
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label head;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
-        /// Label1 control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lbCTCPackage control.
+        /// navName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbCTCPackage;
+        protected global::System.Web.UI.WebControls.Label navName;
 
         /// <summary>
-        /// Label2 control.
+        /// BtnLoginEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Button BtnLoginEmp;
 
         /// <summary>
-        /// lbLeaveCount control.
+        /// BtnLogOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbLeaveCount;
+        protected global::System.Web.UI.WebControls.Button BtnLogOut;
 
         /// <summary>
-        /// Label3 control.
+        /// AdminPlace control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-
-        /// <summary>
-        /// lbThisMonthDispatch control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbThisMonthDispatch;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder AdminPlace;
     }
 }

@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Salary.aspx.cs" Inherits="First_Web_App.Salary" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/UserMaster.Master" CodeBehind="Salary.aspx.cs" Inherits="First_Web_App.Salary" %>
 
-<!DOCTYPE html>
+<%--<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -42,66 +42,67 @@
 
                 </div>
             </div>
-        </nav>
+        </nav>--%>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <main>
         <style>
-            #centerdiv {
-                top: 50%;
-                left: 50%;
-                width: 300px;
-                height: 400px;
-                margin-top: -200px;
-                margin-left: -150px;
-                border: 1px solid #666;
-                background-color: lightblue;
-                position: fixed;
-                ;
-            }
+                #Salarycenterdiv {
+                    top: 50%;
+                    left: 50%;
+                    width: 300px;
+                    height: 400px;
+                    margin-top: -200px;
+                    margin-left: -150px;
+                    border: 1px solid #666;
+                    background-color: lightblue;
+                    position: fixed;
+                }
 
-            #head {
-                font-size: 38px;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                position:relative;
-                top:30px;
-                left:10%;
-            }
+                #head {
+                    font-size: 38px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    position: relative;
+                    top: 30px;
+                    left: 10%;
+                }
 
-            #Label1 {
-                position:relative;
-                top:50px;
-                left:10px;
-            }
+                #Label1 {
+                    position: relative;
+                    top: 50px;
+                    left: 10px;
+                }
 
-            #Label2 {
-                position:relative;
-                top:80px;
-                left:10px
-            }
+                #Label2 {
+                    position: relative;
+                    top: 80px;
+                    left: 10px
+                }
 
-            #Label3 {
-                position:relative;
-                top:100px;
-                left:10px
-            }
+                #Label3 {
+                    position: relative;
+                    top: 100px;
+                    left: 10px
+                }
 
-            #lbCTCPackage {
-                position:relative;
-                top:50px;
-                left:90px
-            }
+                #lbCTCPackage {
+                    position: relative;
+                    top: 50px;
+                    left: 90px
+                }
 
-            #lbLeaveCount {
-                position:relative;
-                top:80px;
-                left:95px;
-            }
+                #lbLeaveCount {
+                    position: relative;
+                    top: 80px;
+                    left: 95px;
+                }
 
-            #lbThisMonthDispatch {
-                position:relative;
-                top:100px;
-                left:30px;
-            }
-        </style>
-        <div id="centerdiv">
+                #lbThisMonthDispatch {
+                    position: relative;
+                    top: 100px;
+                    left: 30px;
+                }
+            </style>
+        <div id="Salarycenterdiv">
             <asp:Label ID="head" Text="Salary Details" runat="server"></asp:Label>
             <br />
             <asp:Label ID="Label1" runat="server" Text="CTC Package"></asp:Label>
@@ -113,6 +114,8 @@
             <asp:Label ID="Label3" runat="server" Text="This Month Dispatch"></asp:Label>
             <asp:Label ID="lbThisMonthDispatch" runat="server"></asp:Label>
         </div>
-    </form>
+    </main>
+</asp:Content>
+<%--    </form>
 </body>
-</html>
+</html>--%>

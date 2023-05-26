@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="First_Web_App.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <link rel="stylesheet" type="text/css" href="css/leave_info.css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center" data-bs-theme="dark">
+                <div class="container-fluid ">
+                    <img src="image/clipboard-user.png" style="color:white;margin-right:5px;" alt="Bootstrap" width="30" height="30" />
+                    <a class="navbar-brand" href="#">BlackRock - Admin</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            
+                        </ul>
+                        <p style="color: white; margin-right: 10px; position: relative; top: 8px;">
+                            Welcome
+                            <asp:Label ID="navName" ForeColor="white" runat="server" Text="name"></asp:Label>
+                        </p>
+                        <asp:Button class="btn btn-warning" Style="margin-right: 15px;" runat="server" Text="Login as Employee" ID="BtnLoginEmp" OnClick="BtnLogOut_Click" />
+                        <asp:Button class="btn btn-danger" Style="margin-right: 15px;" runat="server" Text="LogOut" ID="BtnLogOut" OnClick="BtnLogOut_Click" />
+                        <img src="image/cat.png" alt="Bootstrap" width="30" height="30" />
+
+                    </div>
+                </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="AdminPlace" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
